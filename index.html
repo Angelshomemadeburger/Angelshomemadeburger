@@ -119,6 +119,7 @@
             <div class="in">
               <h3>Overload Hotdog with Sili Con Carne</h3>
               <p>A juicy hotdog loaded with Angels' homestyle sili con carne and cheese for a hearty, savory bite.</p>
+              <p class="featured-price">₱65</p>
             </div>
           </article>
           <article class="fcard">
@@ -140,6 +141,7 @@
             <div class="in">
               <h3>Halloween Special</h3>
               <p>A festive seasonal treat made for a little extra fun. Ask us what special is available today.</p>
+              <p class="featured-price">₱55</p>
             </div>
           </article>
 
@@ -151,6 +153,7 @@
             <div class="in">
               <h3>Milky Matcha Latte</h3>
               <p>Enjoy the earthy taste of matcha blended into a creamy, chilled latte. Choose your preferred size.</p>
+              <p class="featured-price">12 oz · ₱70 &nbsp;|&nbsp; 16 oz · ₱80</p>
             </div>
           </article>
 
@@ -162,6 +165,7 @@
             <div class="in">
               <h3>Fruit Soda: Green Apple</h3>
               <p>Bright green apple flavor meets fizzy refreshment in this cool, crisp fruit soda.</p>
+              <p class="featured-price">₱55</p>
             </div>
           </article>
 
@@ -173,6 +177,7 @@
             <div class="in">
               <h3>Loaded Nachos</h3>
               <p>Crunchy nachos piled high with savory toppings for a delicious shareable snack.</p>
+              <p class="featured-price">₱65</p>
             </div>
           </article>
 
@@ -184,6 +189,7 @@
             <div class="in">
               <h3>Crispy Fries</h3>
               <p>Hot, golden, crispy fries tossed in your choice of BBQ, sour cream, or cheese seasoning.</p>
+              <p class="featured-price">Regular · ₱20 &nbsp;|&nbsp; Large · ₱50</p>
             </div>
           </article>
 
@@ -195,6 +201,7 @@
             <div class="in">
               <h3>Pizza</h3>
               <p>Share a freshly baked pizza with a golden crust and your choice of tasty toppings.</p>
+              <p class="featured-price">Hawaiian · ₱150 &nbsp;|&nbsp; Pepperoni · ₱150 &nbsp;|&nbsp; Ham &amp; Cheese · ₱140</p>
             </div>
           </article>
 
@@ -235,7 +242,7 @@
         <!--
         HOW TO EDIT THE MENU (no coding needed)
         - Photo: inside a card, find <img alt="..."> and add src="your-photo.jpg" -> <img src="your-photo.jpg" alt="...">
-        - Order price: change the number in data-p="40" on the <article> line. Prices appear in the order summary.
+        - Price: change the number in data-p="40" on the <article> line. Prices appear on the menu and in the order summary.
         - Name / description / category: edit data-n, data-c and the text inside the card.
         - New item: copy a whole <article> ... </article> block, paste it below the last one, and change data-id to a new unique word.
         - Categories: use Burger, Drinks, Combos, Special, Mix and Match or Add-ons in data-c and the cat label.
@@ -465,6 +472,21 @@
               </div>
             </article>
 
+            <article class="card" data-id="americano" data-n="Americano" data-c="Drinks" data-p="55">
+              <div class="pic" data-e="🥤">
+                <img src="assets/special_halloween.jpg" alt="Americano" loading="lazy" width="400" height="300">
+              </div>
+              <div class="in">
+                <span class="cat">Drinks</span>
+                <h3>Halloween Drinks</h3>
+                <p>A festive seasonal treat made for a little extra fun. Ask us what special is available today.</p>
+                <div class="row">
+                  <span class="price"></span>
+                  <button class="add" data-add="americano" aria-label="Add Americano to order">+ Add</button>
+                </div>
+              </div>
+            </article>
+
             <article class="card" data-id="americano" data-n="Americano" data-c="Drinks" data-p="65">
               <div class="pic" data-e="🥤">
                 <img src="assets/americano.jpg" alt="Americano" loading="lazy" width="400" height="300">
@@ -564,8 +586,8 @@
                 <h3>Milky Chocolate</h3>
                 <p>Rich chocolate flavor meets creamy milk for a smooth, satisfying drink. Choose your preferred size.</p>
                 <div class="fbtns">
-                  <button class="add" data-add="milky-chocolate-12" data-order-name="Milky Chocolate 12 oz" data-price="70" aria-label="Add 12 oz Milky Chocolate to order">12 oz</button>
-                  <button class="add" data-add="milky-chocolate-16" data-order-name="Milky Chocolate 16 oz" data-price="80" aria-label="Add 16 oz Milky Chocolate to order">16 oz</button>
+                  <button class="add" data-add="milky-chocolate-12" data-order-name="Milky Chocolate 12 oz" data-price="70" aria-label="Add 12 oz Milky Chocolate to order">12 oz · ₱70</button>
+                  <button class="add" data-add="milky-chocolate-16" data-order-name="Milky Chocolate 16 oz" data-price="80" aria-label="Add 16 oz Milky Chocolate to order">16 oz · ₱80</button>
                 </div>
               </div>
             </article>
@@ -579,8 +601,8 @@
                 <h3>Milky Mango</h3>
                 <p>Sweet mango and creamy milk make a smooth, fruity drink. Choose your preferred size.</p>
                 <div class="fbtns">
-                  <button class="add" data-add="milky-mango-12" data-order-name="Milky Mango 12 oz" data-price="70" aria-label="Add 12 oz Milky Mango to order">12 oz</button>
-                  <button class="add" data-add="milky-mango-16" data-order-name="Milky Mango 16 oz" data-price="80" aria-label="Add 16 oz Milky Mango to order">16 oz</button>
+                  <button class="add" data-add="milky-mango-12" data-order-name="Milky Mango 12 oz" data-price="70" aria-label="Add 12 oz Milky Mango to order">12 oz · ₱70</button>
+                  <button class="add" data-add="milky-mango-16" data-order-name="Milky Mango 16 oz" data-price="80" aria-label="Add 16 oz Milky Mango to order">16 oz · ₱80</button>
                 </div>
               </div>
             </article>
@@ -594,8 +616,8 @@
                 <h3>Milky Strawberry</h3>
                 <p>Sweet strawberry flavor blended with creamy milk for a smooth, fruity treat. Choose your preferred size.</p>
                 <div class="fbtns">
-                  <button class="add" data-add="milky-strawberry-12" data-order-name="Milky Strawberry 12 oz" data-price="70" aria-label="Add 12 oz Milky Strawberry to order">12 oz</button>
-                  <button class="add" data-add="milky-strawberry-16" data-order-name="Milky Strawberry 16 oz" data-price="80" aria-label="Add 16 oz Milky Strawberry to order">16 oz</button>
+                  <button class="add" data-add="milky-strawberry-12" data-order-name="Milky Strawberry 12 oz" data-price="70" aria-label="Add 12 oz Milky Strawberry to order">12 oz · ₱70</button>
+                  <button class="add" data-add="milky-strawberry-16" data-order-name="Milky Strawberry 16 oz" data-price="80" aria-label="Add 16 oz Milky Strawberry to order">16 oz · ₱80</button>
                 </div>
               </div>
             </article>
@@ -609,8 +631,8 @@
                 <h3>Milky Matcha Latte</h3>
                 <p>Earthy matcha blended with creamy milk for a smooth, chilled latte. Choose your preferred size.</p>
                 <div class="fbtns">
-                  <button class="add" data-add="matcha-12" data-order-name="Milky Matcha Latte 12 oz" data-price="70" aria-label="Add 12 oz Milky Matcha Latte to order">12 oz</button>
-                  <button class="add" data-add="matcha-16" data-order-name="Milky Matcha Latte 16 oz" data-price="80" aria-label="Add 16 oz Milky Matcha Latte to order">16 oz</button>
+                  <button class="add" data-add="matcha-12" data-order-name="Milky Matcha Latte 12 oz" data-price="70" aria-label="Add 12 oz Milky Matcha Latte to order">12 oz · ₱70</button>
+                  <button class="add" data-add="matcha-16" data-order-name="Milky Matcha Latte 16 oz" data-price="80" aria-label="Add 16 oz Milky Matcha Latte to order">16 oz · ₱80</button>
                 </div>
               </div>
             </article>
@@ -624,8 +646,8 @@
                 <h3>Milky Matcha Strawberry</h3>
                 <p>A creamy matcha latte with sweet strawberry flavor for a fruity twist. Choose your preferred size.</p>
                 <div class="fbtns">
-                  <button class="add" data-add="matcha-strawberry-12" data-order-name="Milky Matcha Strawberry 12 oz" data-price="85" aria-label="Add 12 oz Milky Matcha Strawberry to order">12 oz</button>
-                  <button class="add" data-add="matcha-strawberry-16" data-order-name="Milky Matcha Strawberry 16 oz" data-price="100" aria-label="Add 16 oz Milky Matcha Strawberry to order">16 oz</button>
+                  <button class="add" data-add="matcha-strawberry-12" data-order-name="Milky Matcha Strawberry 12 oz" data-price="85" aria-label="Add 12 oz Milky Matcha Strawberry to order">12 oz · ₱85</button>
+                  <button class="add" data-add="matcha-strawberry-16" data-order-name="Milky Matcha Strawberry 16 oz" data-price="100" aria-label="Add 16 oz Milky Matcha Strawberry to order">16 oz · ₱100</button>
                 </div>
               </div>
             </article>
@@ -639,8 +661,8 @@
                 <h3>Milky Matcha Mango</h3>
                 <p>A creamy matcha latte paired with sweet mango flavor. Choose your preferred size.</p>
                 <div class="fbtns">
-                  <button class="add" data-add="matcha-mango-12" data-order-name="Milky Matcha Mango 12 oz" data-price="85" aria-label="Add 12 oz Milky Matcha Mango to order">12 oz</button>
-                  <button class="add" data-add="matcha-mango-16" data-order-name="Milky Matcha Mango 16 oz" data-price="100" aria-label="Add 16 oz Milky Matcha Mango to order">16 oz</button>
+                  <button class="add" data-add="matcha-mango-12" data-order-name="Milky Matcha Mango 12 oz" data-price="85" aria-label="Add 12 oz Milky Matcha Mango to order">12 oz · ₱85</button>
+                  <button class="add" data-add="matcha-mango-16" data-order-name="Milky Matcha Mango 16 oz" data-price="100" aria-label="Add 16 oz Milky Matcha Mango to order">16 oz · ₱100</button>
                 </div>
               </div>
             </article>
@@ -763,6 +785,7 @@
             </div>
             <div class="row">
               <button class="btn red" type="button" id="add-mix">Add combo to order</button>
+              <span class="mix-price">₱99 per combo</span>
             </div>
           </div>
 
