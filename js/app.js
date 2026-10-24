@@ -131,6 +131,8 @@
         p: Number(card.dataset.p)
       });
     }
+    const price = $('.price', card);
+    if (price && card.dataset.p) price.textContent = peso(Number(card.dataset.p));
   });
 
   friesItems.forEach(registerItem);
