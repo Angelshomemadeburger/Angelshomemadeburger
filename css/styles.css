@@ -675,9 +675,16 @@ nav {
   color: var(--gold);
 }
 
-.card .price,
-.fcard .price {
-  display: none;
+.fcard .price,
+.mix-price {
+  font-size: 1.2rem;
+}
+
+.featured-price {
+  flex: 0 0 auto !important;
+  margin: 6px 0 0 !important;
+  color: var(--gold) !important;
+  font-weight: 700;
 }
 
 .add {
